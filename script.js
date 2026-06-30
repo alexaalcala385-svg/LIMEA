@@ -60,3 +60,30 @@ document.addEventListener("keydown", function(event){
 });
 
 console.log("Sitio Liméa cargado correctamente");
+// ===== MODO OSCURO =====
+
+const botonModo = document.getElementById("modoOscuro");
+
+if (botonModo) {
+
+    // Mantener el modo al cambiar de página
+    if (localStorage.getItem("modo") === "oscuro") {
+        document.body.classList.add("dark-mode");
+        botonModo.textContent = "☀️";
+    }
+
+    botonModo.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("modo", "oscuro");
+            botonModo.textContent = "☀️";
+        } else {
+            localStorage.setItem("modo", "claro");
+            botonModo.textContent = "🌙";
+        }
+
+    });
+
+}
