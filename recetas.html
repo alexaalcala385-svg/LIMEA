@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recetas | Liméa</title>
+
+<link rel="icon" type="image/jpeg" href="img/logo.jpeg">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+<img src="img/logo.jpeg" alt="Logo Liméa">
+<h2>Liméa</h2>
+</div>
+
+<div class="menu-icon" onclick="toggleMenu()">
+&#9776;
+</div>
+
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="producto.html">Producto</a></li>
+<li><a href="ingredientes.html">Ingredientes</a></li>
+<li><a href="beneficio.html">Beneficios</a></li>
+<li><a href="recetas.html">Recetas</a></li>
+<li><a href="contaco.html">Contacto</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero recetas-hero">
+
+<div class="texto">
+
+<h1>Recetas con Liméa</h1>
+
+<p>
+
+Descubre nuevas formas de disfrutar el sabor natural del limón, la miel y el jengibre.
+Prepara bebidas, platillos y snacks saludables con un toque único.
+
+</p>
+
+<a href="#calientes" class="boton">
+
+Explorar recetas
+
+</a>
+
+</div>
+
+<div>
+
+<img src="img/Recetario.jpeg" class="botella" alt="Recetas Liméa">
+
+</div>
+
+</section>
+
+<section id="calientes">
+
+<h2 class="recetas-titulo">
+
+☕ Bebidas Calientes
+
+</h2>
+
+<p class="recetas-subtitulo">
+
+Perfectas para comenzar el día o relajarte antes de dormir.
+
+</p>
+
+<div class="recetas">
+
+<div class="receta">
+
+<img src="img/Té clasico.jpeg" alt="Té Inmune">
+
+<div class="contenido-receta">
+
+<h3>Té "Inmune-Shot" Clásico</h3>
+
+<div class="info">
+<span>⏱ 5 min</span>
+<span class="facil">⭐ Fácil</span>
+</div>
+
+<p>
+
+Ideal para disfrutar una bebida caliente con el delicioso sabor de Liméa.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal1')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+<div class="receta">
+
+<img src="img/Té negro.jpeg" alt="Té Negro">
+
+<div class="contenido-receta">
+
+<h3>Té Negro o Verde Especiado</h3>
+
+<div class="info">
+<span>⏱ 7 min</span>
+<span class="facil">⭐ Fácil</span>
+</div>
+
+<p>
+
+Una combinación perfecta entre tu té favorito y el toque natural de Liméa.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal2')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MODAL 1 -->
+
+<div id="modal1" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+
+<h2>☕ Té "Inmune-Shot" Clásico</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>1 o 2 cucharadas de jarabe Liméa.</li>
+
+<li>1 taza de agua caliente (sin hervir).</li>
+
+<li>Rodaja de limón (opcional).</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Disuelve el jarabe Liméa en el agua caliente.
+Mezcla hasta integrar completamente y disfruta.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Añade una pizca de canela para un sabor aún más reconfortante.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- MODAL 2 -->
+
+<div id="modal2" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+
+<h2>🍃 Té Negro o Verde Especiado</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>1 taza de té negro o verde.</li>
+
+<li>1 cucharada de Liméa.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Prepara tu té favorito y endúlzalo con Liméa en lugar de azúcar.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Agrega una hoja de menta para un aroma más fresco.
+
+</p>
+
+</div>
+
+</div>
+<!-- ================= BEBIDAS FRÍAS ================= -->
+
+<section id="frias">
+
+<h2 class="recetas-titulo">
+
+🧊 Bebidas Frías
+
+</h2>
+
+<p class="recetas-subtitulo">
+
+Refrescantes, ligeras y perfectas para cualquier momento del día.
+
+</p>
+
+<div class="recetas">
+
+<div class="receta">
+
+<img src="img/Mocktail.jpeg" alt="Mocktail">
+
+<div class="contenido-receta">
+
+<h3>🍹 Mocktail de Limón y Jengibre</h3>
+
+<div class="info">
+<span>⏱ 5 min</span>
+<span class="facil">⭐ Fácil</span>
+</div>
+
+<p>
+
+Una bebida burbujeante, refrescante y sin alcohol.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal3')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+<div class="receta">
+
+<img src="img/Smoothie.jpeg" alt="Smoothie">
+
+<div class="contenido-receta">
+
+<h3>🥬 Green Smoothie Inmunológico</h3>
+
+<div class="info">
+<span>⏱ 8 min</span>
+<span class="facil">⭐⭐ Fácil</span>
+</div>
+
+<p>
+
+Una mezcla natural de frutas, verduras y Liméa.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal4')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MODAL 3 ================= -->
+
+<div id="modal3" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+
+<h2>🍹 Mocktail de Limón y Jengibre</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>2 cucharadas de Liméa.</li>
+
+<li>Agua mineral.</li>
+
+<li>Mucho hielo.</li>
+
+<li>Rodaja de limón.</li>
+
+<li>Hojas de menta.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Llena un vaso con hielo.
+
+Agrega Liméa.
+
+Vierte agua mineral.
+
+Decora con limón y menta.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Sirve en una copa alta para una presentación elegante.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= MODAL 4 ================= -->
+
+<div id="modal4" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+
+<h2>🥬 Green Smoothie Inmunológico</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>1 taza de espinacas.</li>
+
+<li>Media manzana verde.</li>
+
+<li>Agua o agua de coco.</li>
+
+<li>Hielo.</li>
+
+<li>1 cucharada generosa de Liméa.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Licúa todos los ingredientes durante un minuto hasta obtener una mezcla homogénea.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Añade semillas de chía para aumentar el aporte de fibra.
+
+</p>
+
+</div>
+
+</div>
+<!-- ================= EN LA COCINA ================= -->
+
+<section id="cocina">
+
+<h2 class="recetas-titulo">
+
+🍽️ En la Cocina
+
+</h2>
+
+<p class="recetas-subtitulo">
+
+Dale un toque gourmet a tus platillos favoritos.
+
+</p>
+
+<div class="recetas">
+
+<div class="receta">
+
+<img src="img/Aderezo.jpeg" alt="Aderezo">
+
+<div class="contenido-receta">
+
+<h3>🥗 Aderezo Cítrico</h3>
+
+<div class="info">
+<span>⏱ 5 min</span>
+<span class="facil">⭐ Fácil</span>
+</div>
+
+<p>
+
+Un aderezo fresco y natural para ensaladas.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal5')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+<div class="receta">
+
+<img src="img/Salmón.jpeg" alt="Pollo">
+
+<div class="contenido-receta">
+
+<h3>🍗 Glaseado para Pollo o Salmón</h3>
+
+<div class="info">
+<span>⏱ 20 min</span>
+<span class="intermedio">⭐⭐ Intermedio</span>
+</div>
+
+<p>
+
+Ideal para dar un toque agridulce y caramelizado.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal6')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SNACKS ================= -->
+
+<section id="snacks">
+
+<h2 class="recetas-titulo">
+
+🥣 Snacks Saludables
+
+</h2>
+
+<p class="recetas-subtitulo">
+
+Opciones deliciosas para disfrutar durante el día.
+
+</p>
+
+<div class="recetas">
+
+<div class="receta">
+
+<img src="img/yogurth.jpeg" alt="Yogur">
+
+<div class="contenido-receta">
+
+<h3>🥣 Bowl de Yogur y Avena</h3>
+
+<div class="info">
+<span>⏱ 3 min</span>
+<span class="facil">⭐ Muy Fácil</span>
+</div>
+
+<p>
+
+Un desayuno nutritivo con el toque natural de Liméa.
+
+</p>
+
+<a href="#" class="boton-receta" onclick="abrirModal('modal7')">
+
+Ver receta
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MODAL 5 ================= -->
+
+<div id="modal5" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal5')">&times;</span>
+
+<h2>🥗 Aderezo Cítrico</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>2 cucharadas de Liméa.</li>
+<li>3 cucharadas de aceite de oliva.</li>
+<li>Pizca de sal.</li>
+<li>Vinagre de manzana.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Mezcla todos los ingredientes hasta integrar completamente.
+
+Sirve sobre ensaladas de espinaca, pollo, nueces o fresas.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+También funciona como marinado para verduras.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= MODAL 6 ================= -->
+
+<div id="modal6" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal6')">&times;</span>
+
+<h2>🍗 Glaseado para Pollo o Salmón</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>2 cucharadas de Liméa.</li>
+<li>Pechuga de pollo o salmón.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Barniza la carne con Liméa antes de cocinarla.
+
+La miel se caramelizará mientras el limón y el jengibre aportarán un delicioso sabor.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Ideal para preparar al horno o a la plancha.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================= MODAL 7 ================= -->
+
+<div id="modal7" class="modal">
+
+<div class="modal-contenido">
+
+<span class="cerrar" onclick="cerrarModal('modal7')">&times;</span>
+
+<h2>🥣 Bowl de Yogur y Avena</h2>
+
+<h3>Ingredientes</h3>
+
+<ul>
+
+<li>Yogur griego natural.</li>
+<li>Avena.</li>
+<li>Frutos rojos o plátano.</li>
+<li>Jarabe Liméa.</li>
+
+</ul>
+
+<h3>Preparación</h3>
+
+<p>
+
+Sirve el yogur, añade la avena y las frutas.
+
+Finaliza con un hilo de Liméa para endulzar naturalmente.
+
+</p>
+
+<h3>💚 Consejo Liméa</h3>
+
+<p>
+
+Agrega almendras o nueces para un desayuno más completo.
+
+</p>
+
+</div>
+
+</div>
+
+<section class="cta-recetas">
+
+<h2>
+
+¿Listo para preparar estas recetas?
+
+</h2>
+
+<p>
+
+Con Liméa puedes disfrutar nuevas formas de incorporar el sabor del limón, la miel y el jengibre en tu día a día.
+
+</p>
+
+<a href="contacto.html" class="boton">
+
+Contáctanos
+
+</a>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Liméa | Bienestar Natural
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
